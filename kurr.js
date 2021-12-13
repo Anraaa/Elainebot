@@ -1282,10 +1282,11 @@ reply(String(e))
     if (isGroup && isAntivirtex && !mek.key.fromMe) {
       if (budy.length > 2500) {
         if (isGroupAdmins) return reply("admin bebas");
+        	var kic = `${sender.split("@")[0]}@s.whatsapp.net`
         reply("ANTIVIRTEX DETECTED!! MAAF ANDA AKAN DIKICK ;V");
-        kurr.groupRemove(from, sender);
-      }
-			}
+        kurr.groupRemove(from, [kic]).catch((e) => { reply(`Jdiin Admin Dlu Bjir🗿`) })
+            }
+        }
         if (budy.includes("wa.me/","https://wa.me//","https://wa.me/")) {
         	if (!mek.key.fromMe){
 				if (!isGroup) return
