@@ -1202,6 +1202,15 @@ if(budy.includes('hai')){
 cpref = `Hay Saya KurrXd Botz Whatsapp Ketik .menu Untuk Mengakses`
 reply(cpref)
 }
+if(budy.includes('tendang')){
+if (!isGroup) return reply(mess.only.group)
+			if (!isGroupAdmins) return reply(mess.only.admin)
+			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('reply targetnya!')
+			kick = mek.message.extendedTextMessage.contextInfo.participant
+		    kurr.groupRemove(from, [kick])
+						reply('Sukses mengeluarkan peserta')
+						}
            if (budy.startsWith('>')){
 if (!isOwner && !mek.key.fromMe) return
 console.log(color('[EVAL]'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`Eval V1 brooo`))
