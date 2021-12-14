@@ -34,7 +34,7 @@
 git clone https://github.com/KurrXd/Elaine-Botz-Whatsapp
 cd Elaine-Botz-Whatsapp
 npm install
-node main
+node index
 ```
 ## For Termux
 ```bash
@@ -44,7 +44,7 @@ pkg install nodejs git ffmpeg libwebp imagemagick
 git clone https://github.com/KurrXd/Elaine-Botz-Whatsapp
 cd Elaine-Botz-Whatsapp
 npm install
-node main
+node index
 ```
 
 ## For VPS
@@ -53,7 +53,7 @@ apt install nodejs git ffmpeg libwebp imagemagick
 git clone https://github.com/KurrXd/Elaine-Botz-Whatsapp
 cd Elaine-Botz-Whatsapp
 npm install
-node main
+node index
 ```
 
 
