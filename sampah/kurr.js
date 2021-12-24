@@ -2231,7 +2231,8 @@ case 'wibumenu':
 _ℒ⃝🌊 ${prefix}loli_
 _ℒ⃝🌊 ${prefix}husbu_
 _ℒ⃝🌊 ${prefix}milf_
-_ℒ⃝🌊 ${prefix}cosplay_        
+_ℒ⃝🌊 ${prefix}cosplay_
+_ℒ⃝🌊 ${prefix}whatanime_        
        
  `
 sendButLocation(from, `${menu}`, "*_© Anraa v.3.0_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
