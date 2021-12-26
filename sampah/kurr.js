@@ -187,7 +187,7 @@ function kyun(seconds) {
 const sleep = async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-function waktu(seconds) {
+var runtime = function (seconds) {
 	seconds = Number(seconds);
 	var d = Math.floor(seconds / (3600 * 24));
 	var h = Math.floor(seconds % (3600 * 24) / 3600);
@@ -458,17 +458,11 @@ return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a
                 case 23: jamss = "Dah Malam Jangan Gadang 🌚"; break;
             }
             var tampilUcapan = "" + jamss;
-            const jmn = moment.tz('Asia/Jakarta').format('HH:mm:ss')
-				let d = new Date
-				let locale = 'id'
-				let gmt = new Date(0).getTime() - new Date('1 kurruari 2021').getTime()
-				const weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
-				const week = d.toLocaleDateString(locale, { weekday: 'long' })
-				const calender = d.toLocaleDateString(locale, {
-				day: 'numeric',
-				month: 'long',
-				year: 'numeric'
-		       })
+           const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+           const tima = moment.tz('Asia/Jakarta').format('HH : mm : ss')
+           const wita = moment.tz('Asia/Makassar').format('HH : mm : ss')
+           const wit = moment.tz('Asia/Jayapura').format('HH : mm : ss')
+				
 		const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 if(time2 < "23:59:00"){
 var imageTime = await getBuffer('https://i.pinimg.com/736x/27/ee/27/27ee271709bdb24d555b2dd3de796f93.jpg')
